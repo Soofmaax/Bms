@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez Ventousage Cinéma pour vos besoins de stationnement de tournage. Devis gratuit et réponse rapide">
+    <meta name="keywords" content="contact, devis, ventousage, cinéma, stationnement, tournage">
+    <title>Contact - Ventousage Cinéma</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header avec navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">
+                🎬 Ventousage Cinéma
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="realisations.html" class="nav-link">Réalisations</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+      <!-- Section Héros Contact -->
+    <section class="section-hero">
+        <div class="container">
+            <h1 class="hero-title">Contactez Notre Équipe Opérationnelle</h1>
+            <p class="hero-subtitle">
+                Un tournage à préparer ? Une urgence logistique ? Contactez-nous directement pour une prise en charge rapide et efficace de vos besoins en stationnement et sécurisation de site.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section Informations de contact -->
+    <section class="section">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📞</div>
+                    <h3 class="service-title">Ligne Directe Tournages</h3>
+                    <p class="service-description">
+                        <strong>01 23 45 67 89</strong><br>
+                        Notre ligne est ouverte 24h/24 pour les urgences et les demandes de dernière minute.
+                        Pour les planifications : du lundi au vendredi, 8h-19h.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✉️</div>
+                    <h3 class="service-title">Contact Email</h3>
+                    <p class="service-description">
+                        <strong>contact@ventousage-cinema.fr</strong><br>
+                        Pour toute demande non urgente, nous nous engageons à vous répondre sous 24h.
+                        Pour les documents ou informations complémentaires, privilégiez cet email.
+                    </p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3 class="contact-title">Zone d'Intervention</h3>
+                    <div class="contact-info">
+                        <p><strong>Paris et Île-de-France</strong> : Paris intra-muros, petite et grande couronne.</p>
+                        <p><strong>Grandes Métropoles</strong> : Strasbourg, Bordeaux, Lyon.</p>
+                        <p><strong>Toute la France</strong> : Nous nous déplaçons sur l'ensemble du territoire pour vos projets d'envergure.</p>
+                        <p><strong>Équipes mobiles disponibles</strong> pour s'adapter à vos lieux de tournage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Formulaire de contact -->
+    <section class="section why-choose-us">
+        <div class="container">
+            <h2 class="text-center hero-title">Formulaire de Contact : Précisez Votre Projet</h2>
+            <p class="text-center hero-subtitle">
+                Afin de vous apporter la réponse la plus pertinente et rapide, merci de nous fournir un maximum de détails sur votre tournage. Tous les champs sont obligatoires.
+            </p>
+            <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                <!-- Champ honeypot pour éviter le spam -->
+                <input type="hidden" name="form-name" value="contact">
+                <div style="display: none;">
+                    <label>Ne pas remplir ce champ : <input name="bot-field"></label>
+                </div>
+
+                <!-- Section Informations Essentielles -->
+                <div style="background-color: var(--color-gray-light); padding: var(--spacing-lg); border-radius: 8px; margin-bottom: var(--spacing-xl);">
+                    <h4 style="margin-bottom: var(--spacing-lg); color: var(--color-primary);">Vos Coordonnées</h4>
+                    
+                    <!-- Nom et Prénom -->
+                    <div class="form-group">
+                        <label for="nom" class="form-label">Nom et Prénom <span class="required">*</span></label>
+                        <input type="text" id="nom" name="nom" class="form-input" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email" class="form-label">Adresse Email Professionnelle <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+
+                    <!-- Téléphone -->
+                    <div class="form-group">
+                        <label for="telephone" class="form-label">Téléphone (Ligne Directe) <span class="required">*</span></label>
+                        <input type="tel" id="telephone" name="telephone" class="form-input" required>
+                    </div>
+                </div>
+
+                <!-- Section Informations Complémentaires -->
+                <div style="margin-bottom: var(--spacing-xl);">
+                    <h4 style="margin-bottom: var(--spacing-lg); color: var(--color-text);">Détails de Votre Projet <span style="color: var(--color-primary); font-size: 0.9em;">(Tous les champs sont obligatoires)</span></h4>
+                    
+                    <!-- Société -->
+                    <div class="form-group">
+                        <label for="societe" class="form-label">Société de Production / Organisme <span class="required">*</span></label>
+                        <input type="text" id="societe" name="societe" class="form-input" required>
+                    </div>
+
+                    <!-- Type de projet -->
+                    <div class="form-group">
+                        <label for="type-projet" class="form-label">Type de Production <span class="required">*</span></label>
+                        <select id="type-projet" name="type-projet" class="form-select" required>
+                            <option value="">Sélectionnez le type de votre projet</option>
+                            <option value="long-metrage">Long-métrage</option>
+                            <option value="court-metrage">Court-métrage</option>
+                            <option value="serie-tv">Série TV</option>
+                            <option value="documentaire">Documentaire</option>
+                            <option value="publicite">Publicité</option>
+                            <option value="clip-musical">Clip musical</option>
+                            <option value="emission-tv">Émission TV</option>
+                            <option value="autre">Autre (précisez dans le message)</option>
+                        </select>
+                    </div>
+
+                    <!-- Adresse du tournage -->
+                    <div class="form-group">
+                        <label for="adresse" class="form-label">Adresse Précise du Tournage <span class="required">*</span></label>
+                        <input type="text" id="adresse" name="adresse" class="form-input" placeholder="Ex: 12 rue de la Paix, 75002 Paris ou lieu-dit, code postal" required>
+                    </div>
+
+                    <!-- Dates de tournage -->
+                    <div class="form-group">
+                        <label for="dates" class="form-label">Dates et Horaires Prévus du Tournage <span class="required">*</span></label>
+                        <input type="text" id="dates" name="dates" class="form-input" placeholder="Ex: Du 15 au 20 mars 2025, de 8h à 20h" required>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="form-group">
+                        <label for="message" class="form-label">Votre Message / Détails Logistiques <span class="required">*</span></label>
+                        <textarea id="message" name="message" class="form-textarea" rows="6" placeholder="Décrivez précisément vos besoins : nombre de véhicules à ventousser, type de matériel lourd, contraintes spécifiques (accès, riverains), besoins en gardiennage, etc." required></textarea>
+                    </div>
+                </div>
+
+                <!-- Bouton d'envoi -->
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary">Envoyer ma Demande</button>
+                </div>
+
+                <p class="text-center" style="font-size: 0.875rem; color: var(--color-gray-medium); margin-top: var(--spacing-lg);">
+                    <span class="required">*</span> Tous les champs sont obligatoires pour une prise en charge optimale de votre demande.<br>
+                    Vos données sont traitées avec la plus grande confidentialité et ne seront utilisées que pour répondre à votre sollicitation.
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Section Informations pratiques -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center">Informations Pratiques pour Votre Logistique</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">⏱️</div>
+                    <h4>Délai de Réponse</h4>
+                    <p>Nous nous engageons à vous fournir une première réponse sous 24h. Pour les urgences, privilégiez la ligne directe.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✅</div>
+                    <h4>Étude Personnalisée</h4>
+                    <p>Chaque projet est unique. Nous réalisons une étude détaillée de vos besoins sans engagement pour une solution sur mesure.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🚨</div>
+                    <h4>Gestion des Urgences</h4>
+                    <p>Pour toute demande de dernière minute (moins de 48h), contactez-nous directement par téléphone pour une réactivité maximale.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">💡</div>
+                    <h4>Précision des Informations</h4>
+                    <p>Plus votre demande est détaillée, plus notre proposition sera précise et adaptée aux spécificités de votre tournage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section FAQ rapide -->
+    <section class="section why-choose-us">
+        <div class="container">
+            <h2 class="text-center">Questions Fréquentes des Productions</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h4>Quel est le délai d'intervention minimum ?</h4>
+                    <p class="service-description">
+                        Pour les situations d'urgence, nous pouvons être opérationnels sous 24 heures. Pour une planification optimale et sereine, nous recommandons de nous contacter au moins 48 à 72 heures avant le début de votre tournage.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <h4>Comment sont établis vos tarifs ?</h4>
+                    <p class="service-description">
+                        Nos tarifs sont calculés en fonction de la complexité du site, de la durée de l'intervention, du nombre de véhicules à gérer et des services complémentaires requis. Chaque proposition est personnalisée après étude de votre projet.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <h4>Intervenez-vous pour les tournages de nuit ou le weekend ?</h4>
+                    <p class="service-description">
+                        Absolument. Le monde du cinéma ne s'arrête jamais. Nos équipes sont disponibles 24h/24 et 7j/7 pour s'adapter aux contraintes spécifiques de vos plannings de tournage, y compris les nuits, weekends et jours fériés.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div style="display: flex; align-items: center; margin-bottom: var(--spacing-md);">
+                        <span style="font-size: var(--font-size-xl); margin-right: var(--spacing-sm);">🎬</span>
+                        <h4 style="margin: 0;">Ventousage Cinéma</h4>
+                    </div>
+                    <p>Votre partenaire de confiance pour la sécurisation des espaces de stationnement lors de vos tournages.</p>
+                    <div style="margin-top: var(--spacing-lg);">
+                        <p style="margin-bottom: var(--spacing-xs);"><strong>📞 01 23 45 67 89</strong></p>
+                        <p style="margin-bottom: var(--spacing-xs);"><strong>✉️ contact@ventousage-cinema.fr</strong></p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Nos Services</h4>
+                    <p><a href="services.html">Ventousage professionnel</a></p>
+                    <p><a href="services.html">Gestion administrative</a></p>
+                    <p><a href="services.html">Gardiennage et sécurité</a></p>
+                    <p><a href="services.html">Régie d'extérieur</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Zone d'Intervention</h4>
+                    <p>📍 Paris et Petite Couronne</p>
+                    <p>📍 Strasbourg, Bordeaux, Lyon</p>
+                    <p><strong>📍 Toute la France</strong></p>
+                    <p style="margin-top: var(--spacing-md);"><strong>Intervention 24h/24 - 7j/7</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens Utiles</h4>
+                    <p><a href="realisations.html">Nos Réalisations</a></p>
+                    <p><a href="contact.html">Nous Contacter</a></p>
+                    <p><a href="mentions.html">Mentions Légales</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ventousage Cinéma. Tous droits réservés. | Spécialiste du stationnement pour tournages depuis 2015</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
